@@ -19,7 +19,7 @@ return [
 
     'allowed_methods' => ['*'],
 
-    'allowed_origins' => ['http://localhost:5173', 'https://senavida-frontend-examen.wasmer.app'],
+    'allowed_origins' => ['http://localhost:5173', 'https://senavida-frontend-examen.wasmer.app', 'https://senavida-frontend-examen-production.up.railway.app'],
 
     'allowed_origins_patterns' => [],
 
@@ -32,3 +32,4 @@ return [
     'supports_credentials' => false,
 
 ];
+
