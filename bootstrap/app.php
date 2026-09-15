@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 
 use App\Exceptions\ApiException;
 use Illuminate\Auth\AuthenticationException;
