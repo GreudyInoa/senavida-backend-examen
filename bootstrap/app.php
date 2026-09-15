@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 use App\Exceptions\ApiException;
 use Illuminate\Auth\AuthenticationException;
@@ -19,6 +19,7 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware): void {
+        $middleware->prepend(\App\Http\Middleware\HandleCorsOptions::class);
         $middleware->redirectGuestsTo(function (Request $request) {
             return $request->is('api/*') ? null : '/';
         });
