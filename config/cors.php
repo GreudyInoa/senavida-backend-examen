@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 return [
 
@@ -19,7 +19,7 @@ return [
 
     'allowed_methods' => ['*'],
 
-    'allowed_origins' => ['http://localhost:5173'],
+    'allowed_origins' => ['http://localhost:5173', 'https://senavida-frontend-examen.wasmer.app'],
 
     'allowed_origins_patterns' => [],
 
